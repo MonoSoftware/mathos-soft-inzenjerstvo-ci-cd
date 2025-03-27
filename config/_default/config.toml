@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://mathos.gptech.dev/"
+baseURL = ""
 title = "Mathos"
 
 languageCode = "en-US"
