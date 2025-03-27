@@ -63,3 +63,21 @@ theme = 'hugo-theme-m10c'
   #   lightColor = "#d6d6d6"
   #   lightestColor = "#d3d3d3"
   #   primaryColor = "#ffffff"
+
+[deployment]
+  [[deployment.targets]]
+    name = "mathos.gptech.dev"
+    URL = "s3://mathos.gptech.dev?region=eu-central-1"
+
+  # If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+  cloudFrontDistributionID = "ETJV3L49RNTPJ"
+
+  [[deployment.matchers]]
+  # Cache static assets for 20 years.
+    pattern = "^.+\\.(js|css|png|jpg|gif|svg|ttf)$"
+    cacheControl = "max-age=630720000, no-transform, public"
+    gzip = true
+
+  [[deployment.matchers]]
+    pattern = "^.+\\.(html|xml|json)$"
+    gzip = true    
