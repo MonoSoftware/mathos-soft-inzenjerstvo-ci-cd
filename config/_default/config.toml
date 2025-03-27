@@ -16,6 +16,44 @@ ignoreErrors = ["error-disable-taxonomy"]
 [markup.goldmark.renderer]
 unsafe = true
 
+
+[pagination]
+  pagerSize = 8
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[params]
+  author = "John Doe"
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  menu_item_separator = " - "
+  [[params.social]]
+    icon = "brand-github"
+    name = "Github"
+    url = "https://github.com/gohugoio"
+  [[params.social]]
+    icon = "brand-x"
+    name = "X"
+    url = "https://twitter.com/gohugoio"
+  [[params.social]]
+    icon = "brand-mastodon"
+    name = "Twitter"
+    url = "https://twitter.com/gohugoio"
+
 [deployment]
   [[deployment.targets]]
     name = "mathos.gptech.dev"
