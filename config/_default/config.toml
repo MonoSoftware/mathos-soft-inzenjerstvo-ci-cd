@@ -1,0 +1,17 @@
+######################## default configuration ####################
+baseURL = ""
+title = "Mathos"
+
+languageCode = "en-US"
+DefaultContentLanguage = "en"
+
+enableEmoji = true
+canonifyURLs = true
+disableHugoGeneratorInject = true
+
+disableKinds = ["sitemap", "RSS", "taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
