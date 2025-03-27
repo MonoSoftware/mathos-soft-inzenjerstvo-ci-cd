@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = ""
-title = "Mathos"
+title = "Mathos CI-CD"
 
 languageCode = "en-US"
 DefaultContentLanguage = "en"
